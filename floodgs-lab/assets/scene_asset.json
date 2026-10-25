@@ -1,0 +1,285 @@
+{
+  "scene_id": "synthetic_yard_01",
+  "crs": "local_ENU",
+  "grid": {
+    "nx": 200,
+    "ny": 200,
+    "dx": 1.0,
+    "dy": 1.0
+  },
+  "note": "本文件格式与 InsertAny3D 的 pose.json / Gaussian Grouping 语义掩码对齐。替换为真实场景时只需保持字段名一致。",
+  "terrain_stats": {
+    "z_min": 88.404,
+    "z_max": 100.4121
+  },
+  "static_colliders": [
+    {
+      "id": "PlantA",
+      "type": "building",
+      "bbox": [
+        86,
+        122,
+        106,
+        150
+      ],
+      "z_base": 90.84140485325645,
+      "height": 9.0,
+      "use": "main_workshop",
+      "rigid": false,
+      "source": "GaussianGrouping:mask -> mesh"
+    },
+    {
+      "id": "PlantB",
+      "type": "building",
+      "bbox": [
+        132,
+        108,
+        152,
+        132
+      ],
+      "z_base": 90.76954572987516,
+      "height": 7.0,
+      "use": "warehouse",
+      "rigid": false,
+      "source": "GaussianGrouping:mask -> mesh"
+    },
+    {
+      "id": "StoreC",
+      "type": "building",
+      "bbox": [
+        54,
+        152,
+        74,
+        174
+      ],
+      "z_base": 90.9253037208961,
+      "height": 6.0,
+      "use": "storage",
+      "rigid": false,
+      "source": "GaussianGrouping:mask -> mesh"
+    },
+    {
+      "id": "levee_north",
+      "type": "levee",
+      "z_offset": 4.2,
+      "breach_x": 110.0,
+      "breach_w": 22.0,
+      "rigid": false,
+      "source": "terrain"
+    }
+  ],
+  "dynamic_assets": [
+    {
+      "id": "V1",
+      "type": "vehicle",
+      "sub": "car",
+      "pose": {
+        "xyz": [
+          103.0,
+          84.0,
+          91.43573727551961
+        ],
+        "yaw_deg": 0.0
+      },
+      "mass_kg": 1450.0,
+      "source": "InsertAny3D:inserted_object.ply"
+    },
+    {
+      "id": "V2",
+      "type": "vehicle",
+      "sub": "suv",
+      "pose": {
+        "xyz": [
+          108.0,
+          86.0,
+          91.40422483016779
+        ],
+        "yaw_deg": 0.0
+      },
+      "mass_kg": 2050.0,
+      "source": "InsertAny3D:inserted_object.ply"
+    },
+    {
+      "id": "V3",
+      "type": "vehicle",
+      "sub": "car",
+      "pose": {
+        "xyz": [
+          113.0,
+          88.0,
+          91.39012191507899
+        ],
+        "yaw_deg": 0.0
+      },
+      "mass_kg": 1450.0,
+      "source": "InsertAny3D:inserted_object.ply"
+    },
+    {
+      "id": "V4",
+      "type": "vehicle",
+      "sub": "van",
+      "pose": {
+        "xyz": [
+          104.0,
+          93.0,
+          91.31996422547161
+        ],
+        "yaw_deg": 90.0
+      },
+      "mass_kg": 3600.0,
+      "source": "InsertAny3D:inserted_object.ply"
+    },
+    {
+      "id": "V5",
+      "type": "vehicle",
+      "sub": "car",
+      "pose": {
+        "xyz": [
+          116.0,
+          94.0,
+          91.32385757220078
+        ],
+        "yaw_deg": 20.0
+      },
+      "mass_kg": 1450.0,
+      "source": "InsertAny3D:inserted_object.ply"
+    },
+    {
+      "id": "V6",
+      "type": "vehicle",
+      "sub": "suv",
+      "pose": {
+        "xyz": [
+          121.0,
+          100.0,
+          91.2558900501172
+        ],
+        "yaw_deg": 70.0
+      },
+      "mass_kg": 2050.0,
+      "source": "InsertAny3D:inserted_object.ply"
+    },
+    {
+      "id": "pile(100.0, 90.0)",
+      "type": "cargo_pile",
+      "sub": "boxes",
+      "n": 18,
+      "pose": {
+        "xyz": [
+          100.0,
+          90.0,
+          0.0
+        ],
+        "yaw_deg": 0.0
+      },
+      "mass_kg": 810.0,
+      "source": "manual"
+    },
+    {
+      "id": "pile(110.0, 98.0)",
+      "type": "cargo_pile",
+      "sub": "boxes",
+      "n": 18,
+      "pose": {
+        "xyz": [
+          110.0,
+          98.0,
+          0.0
+        ],
+        "yaw_deg": 0.0
+      },
+      "mass_kg": 810.0,
+      "source": "manual"
+    },
+    {
+      "id": "pile(118.0, 106.0)",
+      "type": "cargo_pile",
+      "sub": "boxes",
+      "n": 18,
+      "pose": {
+        "xyz": [
+          118.0,
+          106.0,
+          0.0
+        ],
+        "yaw_deg": 0.0
+      },
+      "mass_kg": 810.0,
+      "source": "manual"
+    }
+  ],
+  "humans": [
+    {
+      "id": "H1",
+      "x": 88.0,
+      "y": 120.0,
+      "z": 91.1677229915665
+    },
+    {
+      "id": "H2",
+      "x": 92.0,
+      "y": 120.0,
+      "z": 91.09806987931475
+    },
+    {
+      "id": "H3",
+      "x": 96.0,
+      "y": 121.0,
+      "z": 91.02890485325645
+    },
+    {
+      "id": "H4",
+      "x": 100.0,
+      "y": 124.0,
+      "z": 90.95242651880898
+    },
+    {
+      "id": "H5",
+      "x": 108.0,
+      "y": 75.0,
+      "z": 90.932
+    },
+    {
+      "id": "H6",
+      "x": 113.0,
+      "y": 75.5,
+      "z": 90.892
+    },
+    {
+      "id": "H7",
+      "x": 118.0,
+      "y": 76.0,
+      "z": 91.75200000000001
+    },
+    {
+      "id": "H8",
+      "x": 110.0,
+      "y": 96.0,
+      "z": 91.28226340278509
+    },
+    {
+      "id": "H9",
+      "x": 124.0,
+      "y": 96.0,
+      "z": 91.3006326553996
+    },
+    {
+      "id": "H10",
+      "x": 134.0,
+      "y": 106.0,
+      "z": 91.08438189638402
+    },
+    {
+      "id": "H11",
+      "x": 142.0,
+      "y": 110.0,
+      "z": 90.89454572987516
+    }
+  ],
+  "fluid_boundary": {
+    "inlet": "x=0 (west, river only)",
+    "outlet": "x=200 (east, open)",
+    "q_peak": 20.0,
+    "t_peak": 260.0
+  }
+}
